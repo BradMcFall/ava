@@ -1,0 +1,33 @@
+---
+title: "Read AVA csv info"
+author: "BradMcFall"
+date: "April 24 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set
+
+library(tidyverse)
+library(knitr)
+```
+
+## R Markdown
+
+
+
+```{r }
+balava<-read_csv('avabalances.csv')
+```
+
+## Including Plots
+
+
+
+```{r }
+
+kable(head(balava))
+
+```
+
+
